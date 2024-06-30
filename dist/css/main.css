@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,7 +25,7 @@ body {
     height: 40px;
     background-size: contain;
     animation: bounce 2s infinite;
-    top : -50px;
+    top: -50px;
 }
 
 @keyframes bounce {
@@ -50,10 +54,27 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-  }
+    overflow: hidden;
+}
+
+.wrapper {
+    animation: scroll 30s linear infinite;
+}
+
+.wrappers {
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
 
 .card-top-right {
-    clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);  
-  }
-
-      
+    clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);
+}

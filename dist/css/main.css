@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
@@ -77,4 +78,11 @@ body {
 
 .card-top-right {
     clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.back-button {
+    right: 2px;
+    top: -5px;
+    background-color: white;
+    z-index:20;
 }

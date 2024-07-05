@@ -1,0 +1,83 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='../css/output.css')
+    link(rel='stylesheet', href='../css/main.css')
+    link(rel='shortcut icon', href='../assets/freddie.jpg', type='image/x-icon')
+    title health
+  body.bg-slate-200   
+
+    include components/hero
+    .arrow
+      a(href='#digital-types') 
+        svg(xmlns='http://www.w3.org/2000/svg', width='50', height='50', viewBox='0 0 24 24')
+          path(fill='#FFFFFF', d='m12 15l4-4H8zm0 7q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22')
+    br
+    .flex.gap-4.overscroll-x-none.wrappers
+      #digital-types.flex.justify-between.wrapper.gap-4
+        #card-1.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Electronic Health Records&quot;
+          p
+            | Transitioning from traditional paper-based records to electronic health records has been a
+            | cornerstone of
+            | digital transformation. EHRs enable healthcare providers to access patient information seamlessly,
+            | leading to more coordinated and personalized care. This accessibility also facilitates quicker
+            | decision-making and reduces errors in diagnosis and treatment.
+        #card-2.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Telemedicine and Remote Monitoring
+          p
+            | The advent of telemedicine has revolutionized healthcare delivery by enabling remote consultations
+            | and
+            | monitoring. Patients can now receive medical advice, diagnosis, and even treatment without the need
+            | for
+            | physical visits to healthcare facilities.
+        #card-3.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Big Data and Analytics
+          p
+            | Harnessing big data and analytics has empowered healthcare organizations to derive actionable
+            | insights
+            | from vast amounts of health-related information. By analyzing patient data, healthcare providers can
+            | identify trends, predict outbreaks, personalize treatment plans, and optimize resource allocation.
+        #card-4.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3
+            | Artificial Intelligence (AI) and Machine Learning
+            | (ML)
+          p
+            | AI and ML technologies are driving innovation in healthcare by automating routine tasks, predicting
+            | patient outcomes, and supporting clinical decision-making. AI-powered diagnostic tools can analyze
+            | medical images, detect patterns in patient data, and assist in early disease detection
+      #digital-types.flex.justify-between.wrapper.gap-4.hidden
+        #card-1.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Electronic Health Records&quot;
+          p
+            | Transitioning from traditional paper-based records to electronic health records has been a
+            | cornerstone of
+            | digital transformation. EHRs enable healthcare providers to access patient information seamlessly,
+            | leading to more coordinated and personalized care. This accessibility also facilitates quicker
+            | decision-making and reduces errors in diagnosis and treatment.
+        #card-2.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Telemedicine and Remote Monitoring
+          p
+            | The advent of telemedicine has revolutionized healthcare delivery by enabling remote consultations
+            | and
+            | monitoring. Patients can now receive medical advice, diagnosis, and even treatment without the need
+            | for
+            | physical visits to healthcare facilities.
+        #card-3.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3 Big Data and Analytics
+          p
+            | Harnessing big data and analytics has empowered healthcare organizations to derive actionable
+            | insights
+            | from vast amounts of health-related information. By analyzing patient data, healthcare providers can
+            | identify trends, predict outbreaks, personalize treatment plans, and optimize resource allocation.
+        #card-4.card.card-top-right.h-40
+          h2.font-bold.py-3.px-3(class='hover:animate-pulse')
+            | Artificial Intelligence (AI) and Machine Learning
+            | (ML)
+          p
+            | AI and ML technologies are driving innovation in healthcare by automating routine tasks, predicting
+            | patient outcomes, and supporting clinical decision-making. AI-powered diagnostic tools can analyze
+            | medical images, detect patterns in patient data, and assist in early disease detection
+    br

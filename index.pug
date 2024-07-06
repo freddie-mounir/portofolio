@@ -1,0 +1,60 @@
+doctype html
+html(lang='en')
+head
+  meta(charset='UTF-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet', href='./dist/css/main.css')
+  link(rel='stylesheet', href='./dist/css/output.css')
+  script(src='https://cdn.tailwindcss.com')
+
+  link(rel='shortcut icon', href='./dist/assets/freddie.jpg', type='image/x-icon')
+  title freddie&apos;s
+  style.
+body
+  header.flex.justify-between.flex-row  
+    logo
+      img.m-8.rounded-full.outline.outline-white.outline-offset-4.transition.duration-500(src='./dist/assets/freddie.jpg', alt='freddie', height='100px', width='100px', class='hover:-rotate-45')
+    a.m-8(href='./dist/assets/freddie resume.pdf', download='')
+      button.px-3.py-1.bg-green-500.mr-3(class='hover:text-white hover:bg-green-700') Resume
+  section.w-auto.flex.flex-col
+    div.mx-16.mt-16.p-5.flex.flex-col.items-center.justify-center.shadow-xl
+      p.text-lg.mt-2 Hi, my name is
+      h1.text-3xl.font-bold(class='xl:text-5xl') Freddie Mounir
+        span.animate-ping.duration-300 .
+      div.flex.gap-4
+        h2.text-3xl.mt-2.text-green-500.cursor-pointer Business
+        h2.text-3xl.mt-2.text-green-500.cursor-pointer Web
+        h2.text-3xl.mt-2.text-green-500.cursor-pointer Health
+      p.mt-3.text-center.text-(class='w-2/3')
+      | passionate to get 
+      span.font-bold.text-green-300 Health  
+      | lead by
+      span.font-bold.text-green-300 Technology
+      | expert in 
+      span.font-bold.text-green-300 Business, medical
+      | solutions technology
+      a.m-5(href='./dist/assets/freddie resume.pdf', download='')
+        button.mb-3.px-3.py-1.bg-green-500(class='hover:text-white hover:bg-green-700') Resume
+  section.flex.justify-around.gap-2.mt-8.mx-3
+    a(href='./dist/dist/MBA.html')
+      div.flex.flex-col.gap-2.shadow-lg.items-center.py-3.transition.ease-in-out.duration-300(class='hover:scale-110')
+        icon
+          img.h-12.mx-auto(src='./dist/assets/business-icon.png', alt='')
+        h2.text-xl.text-center.font-bold.text-green-500 MBA holder
+        p.text-center(class='w-2/3') Business adminstration certificate holder from Helwan University 
+
+    a(href='./dist/dist/tech-expert.html')
+      div.flex.flex-col.gap-2.shadow-lg.items-center.py-3.transition.ease-in-out.duration-300(class='hover:scale-110')
+        icon
+          img.h-12.mx-auto(src=' ./dist/assets/digital-icon.png', alt='')
+        h2.text-xl.text-center.font-bold.text-green-500 Tech expert
+        p.text-center(class='w-2/3') Need any info or tip for your technology scope, I&apos;m here for you
+
+    a(href='./dist/dist/health-info.html')
+      div.flex.flex-col.gap-2.shadow-lg.items-center.py-3.transition.ease-in-out.duration-300(class='hover:scale-110')
+        icon
+          img.h-12.mx-auto(src=' ./dist/assets/medical-icon.png', alt='')
+        h2.text-xl.text-center.font-bold.text-green-500 Health Information
+        p.text-center(class='w-2/3') Merging medical background with technology would facilitate the future of medicine
+
+  include dist/components/footer   

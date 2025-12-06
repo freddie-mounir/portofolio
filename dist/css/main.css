@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(../assets/wave.svg);
+    width: 100dvw;
+    height: 100dvh;
+    background-repeat: no-repeat;
+}
+
+.arrow {
+    position: relative;
+    bottom: -2rem;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    animation: bounce 2s infinite;
+    top: -50px;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.card {
+    background-color: greenyellow;
+    border-radius: 3px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.wrapper {
+    animation: scroll 30s linear infinite;
+}
+
+.wrappers {
+    overflow: hidden;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.card-top-right {
+    clip-path: polygon(0% 0%, 80% 0%, 100% 20%, 100% 100%, 0% 100%);
+}
+
+.back-button {
+    right: 2px;
+    top: -5px;
+    background-color: white;
+    z-index:20;
+}
